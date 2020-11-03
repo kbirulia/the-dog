@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="main"
+  >
+    <a
+      className="logo"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="The god"
+        height="70"
+        src="logo.png"
+        title="The dog"
+        width="70"
+      />
+      <h1
+        className="logo__title"
+      >
+        The dog
+      </h1>
+    </a>
+  </div>
+</header>
+`;

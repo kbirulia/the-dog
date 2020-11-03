@@ -1,0 +1,16 @@
+.header {
+  background-color: #F05A14;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__title {
+  color: white;
+  margin-left: 8px;
+}
+

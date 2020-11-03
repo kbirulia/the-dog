@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllBreeds should render breeds 1`] = `
+Array [
+  <h2
+    className="main__title"
+  >
+    All breeds
+  </h2>,
+  <ul>
+    <li>
+      African Hunting Do
+    </li>
+    <li>
+      Airedale Terrier
+    </li>
+  </ul>,
+]
+`;
+
+exports[`AllBreeds should render error 1`] = `
+<div>
+  Error: 
+  Some error
+</div>
+`;
+
+exports[`AllBreeds should render spinner 1`] = `"Spinner"`;

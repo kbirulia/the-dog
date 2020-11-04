@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import IBreed from "../../interfaces/breed";
 import "./AllBreeds.style.css";
 import Spinner from "../Spinner";
-import IErrorStatus from "../../interfaces/IErrorStatus";
+import IErrorStatus from "../../interfaces/errorStatus";
 import ErrorPage from "../ErrorPage";
 
 type TAllBreedProps = {

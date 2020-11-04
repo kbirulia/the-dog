@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import IErrorStatus from "../../interfaces/IErrorStatus";
+import IErrorStatus from "../../interfaces/errorStatus";
 
 type TUseFetch<T> = {
   error: null | IErrorStatus;

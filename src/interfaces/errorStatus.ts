@@ -1,4 +1,4 @@
 export default interface IErrorStatus {
-  status: number;
+  status: number | null;
   statusText: string;
 }

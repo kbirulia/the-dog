@@ -32,7 +32,15 @@ const useFetch = <T>(
       })
       .catch((errorStatus: IErrorStatus) => {
         setIsLoaded(true);
-        setError(errorStatus);
+        setError(
+          errorStatus.status
+            ? errorStatus
+            : {
+                status: null,
+                statusText:
+                  "Fetching failed. Check your network connection or disconnect Global Protect",
+              }
+        );
       });
   }, [url, params]);
 

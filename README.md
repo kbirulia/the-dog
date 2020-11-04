@@ -1,6 +1,7 @@
 # The dog
 
 Application is reading data from [The dog API](https://documenter.getpostman.com/view/4016432/the-dog-api/RW81vZ4Z).
+It is displaying list of dog breeds. 
 
 ## Available Scripts
 

@@ -4,6 +4,7 @@ import Header from "../Header";
 import AllBreeds from "../AllBreeds";
 import ErrorBoundary from "../ErrorBoundary";
 import ErrorPage from "../ErrorPage";
+import Breed from "../Breed";
 
 const App = (): JSX.Element => (
   <ErrorBoundary>
@@ -12,11 +13,7 @@ const App = (): JSX.Element => (
       <Switch>
         <Route path="/" exact component={() => <Redirect to="/breeds" />} />
         <Route path="/breeds" exact component={AllBreeds} />
-        <Route
-          path="/breeds/:breedId"
-          exact
-          component={() => <div>Some breed</div>}
-        />
+        <Route path="/breeds/:breedId" exact component={Breed} />
         <Route component={() => <ErrorPage title="Page not found" />} />
       </Switch>
     </main>

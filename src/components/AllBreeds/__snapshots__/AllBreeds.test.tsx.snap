@@ -10,7 +10,7 @@ Array [
   <ul>
     <li>
       <a
-        href="/1"
+        href="/breeds/1"
         onClick={[Function]}
       >
         African Hunting Do
@@ -18,7 +18,7 @@ Array [
     </li>
     <li>
       <a
-        href="/2"
+        href="/breeds/2"
         onClick={[Function]}
       >
         Airedale Terrier
@@ -27,7 +27,3 @@ Array [
   </ul>,
 ]
 `;
-
-exports[`AllBreeds should render error 1`] = `"Not found"`;
-
-exports[`AllBreeds should render spinner 1`] = `"Spinner"`;

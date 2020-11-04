@@ -6,7 +6,9 @@ exports[`App should render page not found 1`] = `
   <main
     className="main"
   >
-    All breeds page
+    <div
+      className="spinner"
+    />
   </main>
 </div>
 `;

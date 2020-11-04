@@ -4,7 +4,9 @@ exports[`Error should render all breeds 1`] = `
 <div
   className="error-page"
 >
-  <h3>
+  <h3
+    className="main__title"
+  >
     Some title
   </h3>
 </div>

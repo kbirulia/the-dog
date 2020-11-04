@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FetchResults should render children 1`] = `"Child"`;
+
+exports[`FetchResults should render error 1`] = `"Not found"`;
+
+exports[`FetchResults should render spinner 1`] = `"Spinner"`;

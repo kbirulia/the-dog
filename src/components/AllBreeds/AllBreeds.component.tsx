@@ -1,35 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import IBreed from "../../interfaces/breed";
-import "./AllBreeds.style.css";
-import Spinner from "../Spinner";
-import IErrorStatus from "../../interfaces/errorStatus";
-import ErrorPage from "../ErrorPage";
 
 type TAllBreedProps = {
-  error: null | IErrorStatus;
-  isLoaded: boolean;
-  breeds: ReadonlyArray<IBreed>;
+  breeds: ReadonlyArray<Partial<IBreed>>;
 };
 
-const AllBreeds = ({
-  error,
-  isLoaded,
-  breeds,
-}: TAllBreedProps): JSX.Element => {
-  if (error) {
-    return <ErrorPage title={error.statusText} />;
-  }
-  if (!isLoaded) {
-    return <Spinner />;
-  }
+const AllBreeds = ({ breeds }: TAllBreedProps): JSX.Element => {
   return (
     <>
       <h2 className="main__title">All breeds</h2>
       <ul>
-        {breeds.map((breed: IBreed) => (
+        {breeds.map((breed: Partial<IBreed>) => (
           <li key={breed.id}>
-            <Link to={`/${breed.id}`}>{breed.name}</Link>
+            <Link to={`/breeds/${breed.id}`}>{breed.name}</Link>
           </li>
         ))}
       </ul>

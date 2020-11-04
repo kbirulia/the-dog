@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breed should render breed 1`] = `
+Array [
+  <h2
+    className="main__title"
+  >
+    African Hunting Dog
+  </h2>,
+  <ul>
+    <li>
+      <span
+        className="breed-details__item"
+      >
+        Weight
+        : 
+      </span>
+       
+      20 - 30 kg
+    </li>
+    <li>
+      <span
+        className="breed-details__item"
+      >
+        Height
+        : 
+      </span>
+       
+      76 cm
+    </li>
+    <li>
+      <span
+        className="breed-details__item"
+      >
+        Origin
+        : 
+      </span>
+       
+      
+    </li>
+    <li>
+      <span
+        className="breed-details__item"
+      >
+        Life Span
+        : 
+      </span>
+       
+      11 years
+    </li>
+    <li>
+      <span
+        className="breed-details__item"
+      >
+        Temperament
+        : 
+      </span>
+       
+      Wild, Hardworking, Dutiful
+    </li>
+    <li>
+      <span
+        className="breed-details__item"
+      >
+        Bred For
+        : 
+      </span>
+       
+      A wild pack animal
+    </li>
+  </ul>,
+]
+`;

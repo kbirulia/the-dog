@@ -11,7 +11,7 @@ const ErrorPage: FunctionComponent<ErrorPageProps> = ({
 }): JSX.Element => {
   return (
     <div className="error-page">
-      <h3>{title}</h3>
+      <h3 className="main__title">{title}</h3>
       {children}
     </div>
   );

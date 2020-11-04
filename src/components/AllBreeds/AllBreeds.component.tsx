@@ -1,14 +1,11 @@
 import React from "react";
+import IBreed from "../../interfaces/breed";
 import "./AllBreeds.style.css";
 import Spinner from "../Spinner";
-
-interface IBreed {
-  name: string;
-  id: number;
-}
+import IErrorStatus from "../../interfaces/IErrorStatus";
 
 interface IAllBreedProps {
-  error: null | string;
+  error: null | IErrorStatus;
   isLoaded: boolean;
   breeds: ReadonlyArray<IBreed>;
 }
@@ -19,7 +16,7 @@ const AllBreeds = ({
   breeds,
 }: IAllBreedProps): JSX.Element => {
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div>Error: {error.statusText}</div>;
   }
   if (!isLoaded) {
     return <Spinner />;

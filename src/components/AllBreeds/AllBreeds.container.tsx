@@ -1,27 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import useFetch from "../../hooks/useFetch";
 import AllBreeds from "./AllBreeds.component";
+import IBreed from "../../interfaces/breed";
 
 const AllBreedsContainer = (): JSX.Element => {
-  const [error, setError] = useState(null);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [breeds, setBreeds] = useState([]);
+  const { error, isLoaded, data } = useFetch<ReadonlyArray<IBreed>>(
+    [],
+    "https://api.thedogapi.com/v1/bree"
+  );
 
-  useEffect(() => {
-    fetch("https://api.thedogapi.com/v1/breeds")
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          setIsLoaded(true);
-          setBreeds(result);
-        },
-        (responseError) => {
-          setIsLoaded(true);
-          setError(responseError.message);
-        }
-      );
-  }, []);
-
-  return <AllBreeds error={error} isLoaded={isLoaded} breeds={breeds} />;
+  return <AllBreeds error={error} isLoaded={isLoaded} breeds={data} />;
 };
 
 export default AllBreedsContainer;

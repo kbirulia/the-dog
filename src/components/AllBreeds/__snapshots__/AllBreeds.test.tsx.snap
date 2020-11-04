@@ -21,7 +21,6 @@ Array [
 exports[`AllBreeds should render error 1`] = `
 <div>
   Error: 
-  Some error
 </div>
 `;
 

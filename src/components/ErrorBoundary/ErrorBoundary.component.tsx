@@ -1,21 +1,21 @@
 import React, { Component, ReactNode } from "react";
 import ErrorPage from "../ErrorPage";
 
-interface Props {
+type TProps = {
   children: ReactNode;
-}
+};
 
-interface State {
+type TState = {
   hasError: boolean;
-}
+};
 
-class ErrorBoundary extends Component<Props, State> {
-  constructor(props: Props) {
+class ErrorBoundary extends Component<TProps, TState> {
+  constructor(props: TProps) {
     super(props);
     this.state = { hasError: false };
   }
 
-  public static getDerivedStateFromError(): State {
+  public static getDerivedStateFromError(): TState {
     return { hasError: true };
   }
 

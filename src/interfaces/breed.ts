@@ -1,6 +1,4 @@
-interface IBreed {
+export default interface IBreed {
   name: string;
   id: number;
 }
-
-export default IBreed;

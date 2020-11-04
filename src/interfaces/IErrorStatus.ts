@@ -1,6 +1,4 @@
-interface IErrorStatus {
+export default interface IErrorStatus {
   status: number;
   statusText: string;
 }
-
-export default IErrorStatus;

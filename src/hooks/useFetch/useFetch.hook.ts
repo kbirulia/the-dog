@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import IErrorStatus from "../../interfaces/IErrorStatus";
 
-interface IUseFetch<T> {
+type TUseFetch<T> = {
   error: null | IErrorStatus;
   isLoaded: boolean;
   data: T;
-}
+};
 
 const useFetch = <T>(
   initData: T,
   url: string,
   params?: RequestInit
-): IUseFetch<T> => {
+): TUseFetch<T> => {
   const [error, setError] = useState<IErrorStatus | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState<T>(initData);

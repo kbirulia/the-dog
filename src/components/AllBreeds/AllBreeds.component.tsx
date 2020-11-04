@@ -6,17 +6,17 @@ import Spinner from "../Spinner";
 import IErrorStatus from "../../interfaces/IErrorStatus";
 import ErrorPage from "../ErrorPage";
 
-interface IAllBreedProps {
+type TAllBreedProps = {
   error: null | IErrorStatus;
   isLoaded: boolean;
   breeds: ReadonlyArray<IBreed>;
-}
+};
 
 const AllBreeds = ({
   error,
   isLoaded,
   breeds,
-}: IAllBreedProps): JSX.Element => {
+}: TAllBreedProps): JSX.Element => {
   if (error) {
     return <ErrorPage title={error.statusText} />;
   }

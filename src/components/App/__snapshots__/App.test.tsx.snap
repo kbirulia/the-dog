@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should render all breeds 1`] = `
-<h1>
-  Sorry.. there was an error
-</h1>
+exports[`App should render page not found 1`] = `
+<div>
+  Header
+  <main
+    className="main"
+  >
+    All breeds page
+  </main>
+</div>
 `;

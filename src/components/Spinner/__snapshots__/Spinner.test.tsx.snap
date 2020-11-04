@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Spinner correctly 1`] = `
+exports[`Spinner should render correctly 1`] = `
 <div
   className="spinner"
 />

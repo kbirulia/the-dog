@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ErrorBoundary should render an error 1`] = `
-<h1>
-  Sorry.. there was an error
-</h1>
-`;
+exports[`ErrorBoundary should render an error 1`] = `"Sorry.. there was an error"`;
 
 exports[`ErrorBoundary should render child 1`] = `
 <div>

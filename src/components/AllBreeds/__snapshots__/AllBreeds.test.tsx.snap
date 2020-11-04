@@ -9,19 +9,25 @@ Array [
   </h2>,
   <ul>
     <li>
-      African Hunting Do
+      <a
+        href="/1"
+        onClick={[Function]}
+      >
+        African Hunting Do
+      </a>
     </li>
     <li>
-      Airedale Terrier
+      <a
+        href="/2"
+        onClick={[Function]}
+      >
+        Airedale Terrier
+      </a>
     </li>
   </ul>,
 ]
 `;
 
-exports[`AllBreeds should render error 1`] = `
-<div>
-  Error: 
-</div>
-`;
+exports[`AllBreeds should render error 1`] = `"Not found"`;
 
 exports[`AllBreeds should render spinner 1`] = `"Spinner"`;

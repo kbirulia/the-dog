@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error should render all breeds 1`] = `
+<div
+  className="error-page"
+>
+  <h3>
+    Some title
+  </h3>
+</div>
+`;

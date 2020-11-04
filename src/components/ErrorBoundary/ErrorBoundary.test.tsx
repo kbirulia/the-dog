@@ -8,6 +8,8 @@ const ErrorChild = () => {
 
 const Child = () => <div>Child</div>;
 
+jest.mock("../ErrorPage/ErrorPage.component");
+
 describe("ErrorBoundary", () => {
   test("should render an error", () => {
     const tree = renderer
